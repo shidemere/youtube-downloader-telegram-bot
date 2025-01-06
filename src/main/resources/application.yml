@@ -1,0 +1,23 @@
+server:
+  port: 8899
+
+default:
+  image: "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg?w=996"
+
+bot:
+  name:
+  token:
+
+logging:
+  level:
+    root: INFO            # Уровень логгирования для всего приложения
+    org.springframework: WARN # Уровень логгирования для Spring
+  file:
+    name: application.log  # Имя файла лога
+    path: logs/            # Путь к файлу лога
+  pattern:
+    console: "%highlight(%-5level) %d{yyyy-MM-dd HH:mm:ss} [%thread] %cyan(%logger{36}) - %msg%n" # Шаблон для консоли
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"     # Шаблон для файла
+  console:
+    enabled: true          # Включить вывод в консоль
+
